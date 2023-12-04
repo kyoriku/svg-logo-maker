@@ -55,3 +55,50 @@ function getUserInput() {
       .catch((error) => reject(error));
   });
 }
+
+function generateSVG(userInput) {
+  let shape;
+  let textX, textY;
+  let fontSize;
+
+  switch (userInput.shape) {
+    case "Circle":
+      shape = new Circle();
+      textX = "50%";
+      textY = "50%";
+      fontSize = 60;
+      break;
+    case "Square":
+      shape = new Square();
+      textX = "50%";
+      textY = "50%";
+      fontSize = 60;
+      break;
+    case "Triangle":
+      shape = new Triangle();
+      textX = "50%";
+      textY = "60%";
+      fontSize = 50;
+      break;
+    default:
+      throw new Error("Invalid shape");
+  }
+
+  const svgWidth = 300;
+  const svgHeight = 200;
+
+  const textColor = userInput.textColor.replace(/\s/g, '');
+  const shapeColor = userInput.shapeColor.replace(/\s/g, '');
+  shape.setColor(shapeColor);
+
+  const svgContent = `
+  <svg width="${svgWidth}" height="${svgHeight}" xmlns="http://www.w3.org/2000/svg">
+    ${shape.render()}
+    <text x="${textX}" y="${textY}" font-size="${fontSize}" fill="${textColor}" text-anchor="middle" alignment-baseline="middle">
+      ${userInput.text}
+    </text>
+  </svg>
+  `;
+
+  fs.writeFileSync("logo.svg", svgContent);
+}
