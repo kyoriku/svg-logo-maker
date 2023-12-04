@@ -102,3 +102,14 @@ function generateSVG(userInput) {
 
   fs.writeFileSync("logo.svg", svgContent);
 }
+
+function init() {
+  getUserInput()
+    .then((userInput) => {
+      generateSVG(userInput);
+      console.log("Generated logo.svg");
+    })
+    .catch((error) => console.error("Error:", error));
+}
+
+init();
