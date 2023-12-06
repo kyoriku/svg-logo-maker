@@ -1,0 +1,8 @@
+
+  <svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+    <polygon points="150,0 265.5,200 34.5,200" fill="teal" />
+    <text x="50%" y="60%" font-size="50" fill="lightgrey" text-anchor="middle" alignment-baseline="middle">
+      GIT
+    </text>
+  </svg>
+  
