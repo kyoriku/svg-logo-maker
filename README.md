@@ -54,6 +54,10 @@ To use the SVG Logo Maker, follow these steps:
 3. Answer the prompts to provide information about your logo, including text (up to three characters), text color, shape (circle, square, or triangle), and shape color.
 4. Once you've answered all the prompts, the `logo.svg` file will be generated in the root of your project.
 
+### Demo Video
+
+https://github.com/kyoriku/svg-logo-maker/assets/145511725/13d52292-3d86-40b9-b87e-4c1aa3f7f4cc
+
 ### Screenshots
 ![Screenshot1](assets/images/svg-logo-maker-1.png)
 ![Screenshot2](assets/images/svg-logo-maker-2.png)
