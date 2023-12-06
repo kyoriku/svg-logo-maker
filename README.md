@@ -58,6 +58,8 @@ To use the SVG Logo Maker, follow these steps:
 
 https://github.com/kyoriku/svg-logo-maker/assets/145511725/13d52292-3d86-40b9-b87e-4c1aa3f7f4cc
 
+[Link to demo video](https://drive.google.com/file/d/1ZPexP72P3HSjpqzEC16xBv38MeWV8hrI/view?usp=sharing)
+
 ### Screenshots
 ![Screenshot1](assets/images/svg-logo-maker-1.png)
 ![Screenshot2](assets/images/svg-logo-maker-2.png)
